@@ -1,28 +1,20 @@
-var add, fillOut, info, myFunction,
-  slice = [].slice;
+var fill;
 
-myFunction = function() {
-  return console.log('Hello');
+fill = function(item) {
+  $('#content').append("" + item);
+  console.log(this);
+  return fill('Diego');
 };
 
-myFunction();
+(fill = function(item) {
+  $('#content').append("" + item);
+  console.dir(this.fill);
+  return fill('Diego');
+})(item);
 
-add = function(a, b) {
-  return a + b;
-};
+(fill = function(item) {
+  $('#content').append("" + item);
+  return console.dir(this.fill);
+})('Diego');
 
-info = ['Diego de Souza', 'http://google.com', 'http://yahoo.com', 'http://facebook.com'];
-
-fillOut = function() {
-  var i, item, len, links, name, results;
-  name = arguments[0], links = 2 <= arguments.length ? slice.call(arguments, 1) : [];
-  $('#content').append(name + "<br>");
-  results = [];
-  for (i = 0, len = links.length; i < len; i++) {
-    item = links[i];
-    results.push($('#content').append(item + "<br>"));
-  }
-  return results;
-};
-
-fillOut.apply(null, info);
+fill;
