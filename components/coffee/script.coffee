@@ -1,43 +1,38 @@
-#working with arrays
-myList = ['Diego'
-  3
-  true]
+#more arrays
+a = [1, 2, 3]
 
-myText = "The quick browon fox jumps over the lazy dog"
+a = [1
+    2
+    3
+    4]
 
-myObj = 
-  name : "Diego"
-  awesome: true
-  heroes : [
-    'Luke'
-    'Bruce'
-    'Clark'
-  ]
+#range in array
 
-#working with hash (objects)
+#inclusive
+a = [1..10]
 
-myObj = 
-  name: "Diego"
-  awesome: true
-  heroes : [
-    {
-      name: 'Luke'
-      age: 30
-    }
-    { 
-      name: 'Bruce'
-      age: 28
-    }
-  ]
+a = [1...10]
 
-$('#content').append myObj.name
+a = [10..1]
 
-$('#content').append myObj.heroes[0].name
+#using slice
 
-#string interpolation
+names = [
+  'Barot Bellingham'
+  'Constance Smith'
+  'Hassum Harrod'
+  'Hillary Goldwynn'
+  'Xhou Ta'
+][0..1]
 
-name = 'Diego'
+names = [
+  'Barot Bellingham'
+  'Constance Smith'
+  'Hassum Harrod'
+  'Hillary Goldwynn'
+  'Xhou Ta'
+][3..]
 
-$('#content').append "--#{name}"
+#splice
 
-
+names[1..2] = ['Bob', 'Peter']
