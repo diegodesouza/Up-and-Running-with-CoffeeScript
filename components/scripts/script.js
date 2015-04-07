@@ -1,33 +1,17 @@
-var myList, myObj, myText, name;
+var a, names, ref;
 
-myList = ['Diego', 3, true];
+a = [1, 2, 3];
 
-myText = "The quick browon fox jumps over the lazy dog";
+a = [1, 2, 3, 4];
 
-myObj = {
-  name: "Diego",
-  awesome: true,
-  heroes: ['Luke', 'Bruce', 'Clark']
-};
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-myObj = {
-  name: "Diego",
-  awesome: true,
-  heroes: [
-    {
-      name: 'Luke',
-      age: 30
-    }, {
-      name: 'Bruce',
-      age: 28
-    }
-  ]
-};
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-$('#content').append(myObj.name);
+a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 
-$('#content').append(myObj.heroes[0].name);
+names = ['Barot Bellingham', 'Constance Smith', 'Hassum Harrod', 'Hillary Goldwynn', 'Xhou Ta'].slice(0, 2);
 
-name = 'Diego';
+names = ['Barot Bellingham', 'Constance Smith', 'Hassum Harrod', 'Hillary Goldwynn', 'Xhou Ta'].slice(3);
 
-$('#content').append("--" + name);
+[].splice.apply(names, [1, 2].concat(ref = ['Bob', 'Peter'])), ref;
