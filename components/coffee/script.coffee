@@ -1,19 +1,23 @@
-# append = (item) ->
-  # $('#content').append "#{item}"
+#this - would give us the whole windown object(entire web browser in it)
+fill = (item) ->
+  $('#content').append "#{item}"
+  console.log this
 
-# author = 'Diego'
 
-# switch author
-  # when 'Bob' then append 'JavaScript'
-  # when 'Morten' then append 'Web Design'
-  # else append 'Training'
+  fill 'Diego'
+#the .dir and @ will narrow it down nicely
+#When you call a function with this do statement, it's going to make it into an expression
+do fill = (item) ->
+  $('#content').append "#{item}"
+  console.dir @fill
 
-  # append = (item) ->
-  # $('#content').append "#{item}"
 
-# author = 'Diego'
+  fill 'Diego'
 
-# switch author
-  # when 'Bob' then append 'JavaScript'
-  # when 'James', 'Diego' then append 'Web Design'
-  # else append 'Training'
+#with this we can create a function with a default paremeter
+
+do fill = (item = 'Diego') ->
+  $('#content').append "#{item}"
+  console.dir @fill
+
+fill
