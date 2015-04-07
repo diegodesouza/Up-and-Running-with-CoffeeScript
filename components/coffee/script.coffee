@@ -1,38 +1,33 @@
-#more arrays
-a = [1, 2, 3]
-
-a = [1
-    2
-    3
-    4]
-
-#range in array
-
-#inclusive
-a = [1..10]
-
-a = [1...10]
-
-a = [10..1]
-
-#using slice
+#for in 
 
 names = [
-  'Barot Bellingham'
-  'Constance Smith'
-  'Hassum Harrod'
-  'Hillary Goldwynn'
-  'Xhou Ta'
-][0..1]
+  "Barot Bellingham"
+  "Constance Smith"
+  "Hassum Harrod"
+  "Hillary Goldwynn"
+  "Xhou Ta"
+]
+
+for thing in names
+  console.log thing
+
+#for in 
 
 names = [
-  'Barot Bellingham'
-  'Constance Smith'
-  'Hassum Harrod'
-  'Hillary Goldwynn'
-  'Xhou Ta'
-][3..]
+  "Barot Bellingham"
+  "Constance Smith"
+  "Hassum Harrod"
+  "Hillary Goldwynn"
+  "Xhou Ta"
+]
 
-#splice
+for thing, i in names
+  console.log "#{i} #{thing}"
 
-names[1..2] = ['Bob', 'Peter']
+info = 
+  name: 'Diego'
+  age: 20
+  blog: 'https://diegodesouza.github.io'
+
+for key, value of info
+  console.log "#{key}: #{value}"

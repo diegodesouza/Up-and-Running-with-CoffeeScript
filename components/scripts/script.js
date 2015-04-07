@@ -1,17 +1,26 @@
-var a, names, ref;
+var i, info, j, k, key, len, len1, names, thing, value;
 
-a = [1, 2, 3];
+names = ["Barot Bellingham", "Constance Smith", "Hassum Harrod", "Hillary Goldwynn", "Xhou Ta"];
 
-a = [1, 2, 3, 4];
+for (j = 0, len = names.length; j < len; j++) {
+  thing = names[j];
+  console.log(thing);
+}
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+names = ["Barot Bellingham", "Constance Smith", "Hassum Harrod", "Hillary Goldwynn", "Xhou Ta"];
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (i = k = 0, len1 = names.length; k < len1; i = ++k) {
+  thing = names[i];
+  console.log(i + " " + thing);
+}
 
-a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+info = {
+  name: 'Diego',
+  age: 20,
+  blog: 'https://diegodesouza.github.io'
+};
 
-names = ['Barot Bellingham', 'Constance Smith', 'Hassum Harrod', 'Hillary Goldwynn', 'Xhou Ta'].slice(0, 2);
-
-names = ['Barot Bellingham', 'Constance Smith', 'Hassum Harrod', 'Hillary Goldwynn', 'Xhou Ta'].slice(3);
-
-[].splice.apply(names, [1, 2].concat(ref = ['Bob', 'Peter'])), ref;
+for (key in info) {
+  value = info[key];
+  console.log(key + ": " + value);
+}
