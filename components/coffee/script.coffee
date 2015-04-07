@@ -1,15 +1,43 @@
-#variable scoping - inside the function
-do addStuff = ->
-  a = 3
-  b = 'Diego'
-  c = true
-  $('#content').append("Don't miss it!")
+#working with arrays
+myList = ['Diego'
+  3
+  true]
 
-#variable scoping - outside the function (almost like they are global var)
+myText = "The quick browon fox jumps over the lazy dog"
 
-a = 3
-b = 'Diego'
-c = true
+myObj = 
+  name : "Diego"
+  awesome: true
+  heroes : [
+    'Luke'
+    'Bruce'
+    'Clark'
+  ]
 
-do addStuff = ->
-  $('#content').append("Dont' miss it!")
+#working with hash (objects)
+
+myObj = 
+  name: "Diego"
+  awesome: true
+  heroes : [
+    {
+      name: 'Luke'
+      age: 30
+    }
+    { 
+      name: 'Bruce'
+      age: 28
+    }
+  ]
+
+$('#content').append myObj.name
+
+$('#content').append myObj.heroes[0].name
+
+#string interpolation
+
+name = 'Diego'
+
+$('#content').append "--#{name}"
+
+

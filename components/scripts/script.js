@@ -1,19 +1,33 @@
-var a, addStuff, b, c;
+var myList, myObj, myText, name;
 
-(addStuff = function() {
-  var a, b, c;
-  a = 3;
-  b = 'Diego';
-  c = true;
-  return $('#content').append("Don't miss it!");
-})();
+myList = ['Diego', 3, true];
 
-a = 3;
+myText = "The quick browon fox jumps over the lazy dog";
 
-b = 'Diego';
+myObj = {
+  name: "Diego",
+  awesome: true,
+  heroes: ['Luke', 'Bruce', 'Clark']
+};
 
-c = true;
+myObj = {
+  name: "Diego",
+  awesome: true,
+  heroes: [
+    {
+      name: 'Luke',
+      age: 30
+    }, {
+      name: 'Bruce',
+      age: 28
+    }
+  ]
+};
 
-(addStuff = function() {
-  return $('#content').append("Dont' miss it!");
-})();
+$('#content').append(myObj.name);
+
+$('#content').append(myObj.heroes[0].name);
+
+name = 'Diego';
+
+$('#content').append("--" + name);
