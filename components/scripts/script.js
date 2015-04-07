@@ -1,45 +1,11 @@
-var dance, happy, name;
+var add, myFunction;
 
-name = 'Diego';
-
-if (name === 'Diego') {
-
-}
-
-name = 'Diego de Souza';
-
-name = 'Diego';
-
-if (name === 'Diego') {
-  name = 'Diego de Souza';
-}
-
-name = 'Diego';
-
-if (name !== 'Diego') {
-  name = 'Diego de Souza';
-}
-
-name = 'Diego';
-
-if (name === 'Diego') {
-  name = 'Diego de souza';
-}
-
-dance = function() {
-  return alert('mambo');
+myFunction = function() {
+  return console.log('Hello');
 };
 
-happy = true;
+myFunction();
 
-if (happy === true) {
-  dance();
-}
-
-name = 'Diego';
-
-$('#content').append;
-
-if (name != null) {
-  "" + name;
-}
+add = function(a, b) {
+  return a + b;
+};
