@@ -1,21 +1,19 @@
-myFunction = ->
-  console.log('Hello')
+# append = (item) ->
+  # $('#content').append "#{item}"
 
-myFunction()
+# author = 'Diego'
 
-add = (a, b) ->
-  a + b
+# switch author
+  # when 'Bob' then append 'JavaScript'
+  # when 'Morten' then append 'Web Design'
+  # else append 'Training'
 
-info = [
-  'Diego de Souza'
-  'http://google.com'
-  'http://yahoo.com'
-  'http://facebook.com'
-]
+  # append = (item) ->
+  # $('#content').append "#{item}"
 
-fillOut = (name, links...) ->
-  $('#content').append "#{name}<br>"
-  for item in links
-    $('#content').append "#{item}<br>"
+# author = 'Diego'
 
-fillOut info...
+# switch author
+  # when 'Bob' then append 'JavaScript'
+  # when 'James', 'Diego' then append 'Web Design'
+  # else append 'Training'
