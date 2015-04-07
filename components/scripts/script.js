@@ -1,17 +1,45 @@
-var a, names, ref;
+var dance, happy, name;
 
-a = [1, 2, 3];
+name = 'Diego';
 
-a = [1, 2, 3, 4];
+if (name === 'Diego') {
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+}
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+name = 'Diego de Souza';
 
-a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+name = 'Diego';
 
-names = ['Barot Bellingham', 'Constance Smith', 'Hassum Harrod', 'Hillary Goldwynn', 'Xhou Ta'].slice(0, 2);
+if (name === 'Diego') {
+  name = 'Diego de Souza';
+}
 
-names = ['Barot Bellingham', 'Constance Smith', 'Hassum Harrod', 'Hillary Goldwynn', 'Xhou Ta'].slice(3);
+name = 'Diego';
 
-[].splice.apply(names, [1, 2].concat(ref = ['Bob', 'Peter'])), ref;
+if (name !== 'Ray') {
+  name = 'Diego de Souza';
+}
+
+name = 'Diego';
+
+if (name === 'Diego') {
+  name = 'Diego de souza';
+}
+
+dance = function() {
+  return alert('mambo');
+};
+
+happy = true;
+
+if (happy === true) {
+  dance();
+}
+
+name = 'Diego';
+
+$('#content').append;
+
+if (name != null) {
+  "" + name;
+}

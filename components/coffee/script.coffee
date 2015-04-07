@@ -1,38 +1,34 @@
-#more arrays
-a = [1, 2, 3]
+name = 'Diego'
 
-a = [1
-    2
-    3
-    4]
+if name == 'Diego' then
+name = 'Diego de Souza'
 
-#range in array
 
-#inclusive
-a = [1..10]
+name = 'Diego'
 
-a = [1...10]
+if name == 'Diego'
+  name = 'Diego de Souza'
 
-a = [10..1]
+name = 'Diego'
 
-#using slice
+#is or isnt for === or !==
+if name isnt 'Ray'
+  name = 'Diego de Souza'
 
-names = [
-  'Barot Bellingham'
-  'Constance Smith'
-  'Hassum Harrod'
-  'Hillary Goldwynn'
-  'Xhou Ta'
-][0..1]
+name = 'Diego'
+ 
+name = 'Diego de souza' if name is 'Diego'
 
-names = [
-  'Barot Bellingham'
-  'Constance Smith'
-  'Hassum Harrod'
-  'Hillary Goldwynn'
-  'Xhou Ta'
-][3..]
+dance = ->
+  alert('mambo')
 
-#splice
+happy = true
 
-names[1..2] = ['Bob', 'Peter']
+dance() if happy is true
+
+#existencial operator(check to see if the var exists)
+
+name = 'Diego'
+$('#content').append
+"#{name}" if name?
+
